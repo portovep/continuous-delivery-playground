@@ -7,11 +7,13 @@ Continuous delivery playground is optimized for learning, which means taking the
 ![Complete pipeline](docs/images/complete-pipeline.svg "Complete Pipeline")
 
 ## Target Audience
+
 The target audience is someone new to CI/CD trying to get hands-on experience implementing a modern continuous delivery pipeline.
+
 > The results of this tutorial should not be viewed as production ready, but don't let that stop you from learning!
 
-
 ## The labs
+
 Following a series of labs, we will build a continuous deployment pipeline where every step is automated. Each lab introduces a new CI/CD concept and implements a new step of the pipeline. The first few labs are focused on understanding the tools and how to create pipelines in Github Actions. If you complete all the labs, you will have a working pipeline and a good foundation on how to apply CI/CD principles and practices to your projects.
 
 ![Step by step](docs/images/lab-steps.svg "Step by step")
@@ -27,20 +29,22 @@ The stack:
 - [Github Actions](https://docs.github.com/en/actions/) as CI/CD platform
 
 ## First steps
+
 To start this tutorial you have to fork the repository.
-1. Go to the section above the repositoy and find button that says fork.
-![Fork Button](docs/images/fork-button.png?raw=true "Fork Button")
+
+1. Go to the section above the repository and find the button that says fork.
+   ![Fork Button](docs/images/fork-button.png?raw=true "Fork Button")
 2. Once you press on it you'll see that it will copy the repository on your account.
-![Fork](docs/images/fork.png?raw=true "Fork")
+   ![Fork](docs/images/fork.png?raw=true "Fork")
 3. Clone the repository and start learning!
-![Clone](docs/images/clone.png?raw=true "Clone")
+   ![Clone](docs/images/clone.png?raw=true "Clone")
 
 ## Labs
 
 - [Prerequisites](docs/00-prerequisites.md)
 - [Lab 1 - Local development workflow](docs/01-local-development.md)
-- [Lab 2 - Creating a hello world pipeline (TBC) ](docs/tbd.md)
-- [Lab 3 - Continuous integration: Testing the application (TBC) ](docs/tbd.md)
-- [Lab 4 - Continuous integration: Building and packaging the application (TBC) ](docs/tbd.md)
-- [Lab 5 - Continuous delivery: Deploying the application to an environment (TBC) ](docs/tbd.md)
-- [Lab 6 - Continuous delivery: Adding a smoke test (TBC) ](docs/tbd.md)
+- [Lab 2 - Creating a hello world pipeline](docs/02-creating-hello-world-pipeline.md)
+- [Lab 3 - Continuous integration: Testing the application](docs/03-adding-test-to-the-pipeline.md)
+- [Lab 4 - Continuous integration: Building and packaging the application](docs/04-building-and-packaging-the-application.md)
+- [Lab 5 - Continuous delivery: Deploying the application to an environment](docs/05-deploying-to-an-environment.md)
+- [Lab 6 - Continuous delivery: Adding a smoke test](docs/06-adding-a-smoke-test.md)
