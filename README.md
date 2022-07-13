@@ -4,11 +4,17 @@ This tutorial walks you through setting up a continuous delivery pipeline from s
 
 Continuous delivery playground is optimized for learning, which means taking the long route to ensure you understand each of the concepts behind a modern continuous delivery pipeline.
 
-> The results of this tutorial should not be viewed as production ready, but don't let that stop you from learning!
+![Complete pipeline](docs/images/complete-pipeline.svg "Complete Pipeline")
 
 ## Target Audience
-
 The target audience is someone new to CI/CD trying to get hands-on experience implementing a modern continuous delivery pipeline.
+> The results of this tutorial should not be viewed as production ready, but don't let that stop you from learning!
+
+
+## The labs
+Following a series of labs, we will build a continuous deployment pipeline where every step is automated. Each lab introduces a new CI/CD concept and implements a new step of the pipeline. The first few labs are focused on understanding the tools and how to create pipelines in Github Actions. If you complete all the labs, you will have a working pipeline and a good foundation on how to apply CI/CD principles and practices to your projects.
+
+![Step by step](docs/images/lab-steps.svg "Step by step")
 
 ## The tools
 
@@ -34,7 +40,6 @@ To start this tutorial you have to fork the repository.
 - [Prerequisites](docs/00-prerequisites.md)
 - [Lab 1 - Local development workflow](docs/01-local-development.md)
 - [Lab 2 - Creating a hello world pipeline (TBC) ](docs/tbd.md)
-
 - [Lab 3 - Continuous integration: Testing the application (TBC) ](docs/tbd.md)
 - [Lab 4 - Continuous integration: Building and packaging the application (TBC) ](docs/tbd.md)
 - [Lab 5 - Continuous delivery: Deploying the application to an environment (TBC) ](docs/tbd.md)
