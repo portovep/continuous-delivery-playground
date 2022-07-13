@@ -64,3 +64,17 @@ jobs:
             - name: Deploy to prod environment
               run: |
                npm run deploy:simulate -- production
+    verify-deployment:
+      name: Verify deployment
+      needs: deploy-prod
+      runs-on: ubuntu-latest
+      steps:
+          - name: Checkout code
+            uses: actions/checkout@v2
+          - name: Deploy with Node.js ${{ env.NODE_VERSION }}
+            uses: actions/setup-node@v1
+            with:
+                node-version: ${{ env.NODE_VERSION }}
+          - name: Run smoke test
+            run: |
+              npm run test:smoke -- https://google.es
