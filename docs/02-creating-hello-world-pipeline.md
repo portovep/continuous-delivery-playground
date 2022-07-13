@@ -22,7 +22,7 @@ Navigate to the folder we just created
 Now we create a workflow inside the workflows folder.
 
 ```
-touch .github/workflows/pipeline.yml
+touch pipeline.yml
 ```
 
 The next step is to add the pipeline definition in the file we just created.
