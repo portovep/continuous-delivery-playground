@@ -1,0 +1,66 @@
+name: CI/CD Pipeline
+
+on: push
+
+env:
+  NODE_VERSION: "14.17"
+
+defaults:
+  run:
+    working-directory: modern-web-app
+
+jobs:
+    test:
+        name: Test
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+            - name: Setup Node.js ${{ env.NODE_VERSION }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+            - name: Run unit tests
+              run: |
+                npm ci
+                npm run test:unit
+    build:
+        name: Build
+        needs: test
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+            - name: Setup Node.js ${{ env.NODE_VERSION }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+            - name: Build the application
+              run: |
+                npm ci
+                npm run build
+            - name: Upload artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                name: modern-web-app-${{ github.sha }}
+                path: modern-web-app/.next/
+    deploy-prod:
+        name: Deploy to prod
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+            - name: Deploy with Node.js ${{ env.NODE_VERSION }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+            - name: Download build artifact
+              uses: actions/download-artifact@v3
+              with:
+                name: modern-web-app-${{ github.sha }}
+                path: artifact_to_deploy
+            - name: Deploy to prod environment
+              run: |
+               npm run deploy:simulate -- production
