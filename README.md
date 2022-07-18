@@ -1,5 +1,7 @@
 # Continuous delivery playground
 
+[![CD Pipeline](https://github.com/portovep//continuous-delivery-playground/actions/workflows/pipeline.yml/badge.svg?branch=main)](https://github.com/portovep//continuous-delivery-playground/actions/workflows/pipeline.yml)
+
 This tutorial walks you through setting up a continuous delivery pipeline from scratch. This guide is for people that want to learn continuous delivery concepts by practicing.
 
 Continuous delivery playground is optimized for learning, which means taking the long route to ensure you understand each of the concepts behind a modern continuous delivery pipeline.
