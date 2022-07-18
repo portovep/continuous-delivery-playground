@@ -28,16 +28,11 @@ The stack:
 - [Next.js](https://nextjs.org/) to create the fake application to deploy
 - [Github Actions](https://docs.github.com/en/actions/) as CI/CD platform
 
-## First steps
+## Getting started
 
-To start this tutorial you have to fork the repository.
-
-1. Go to the section above the repository and find the button that says fork.
-   ![Fork Button](docs/images/fork-button.png?raw=true "Fork Button")
-2. Once you press on it you'll see that it will copy the repository on your account.
-   ![Fork](docs/images/fork.png?raw=true "Fork")
-3. Clone the repository and start learning!
-   ![Clone](docs/images/clone.png?raw=true "Clone")
+1. Fork this repository. If you are new to Github, you can learn how to fork [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+2. Make sure you review the pre-requisites section to see if you have everything we need installed.
+3. If you are new to NPM and Node.js, start by lab 1, otherwise you can start directly in lab 2.
 
 ## Labs
 
