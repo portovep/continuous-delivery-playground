@@ -10,13 +10,18 @@ Continuous delivery playground is optimized for learning, which means taking the
 
 ## Target Audience
 
-The target audience is someone new to CI/CD trying to get hands-on experience implementing a modern continuous delivery pipeline.
+The target audience is someone new to CI/CD trying to get hands-on experience implementing a modern continuous delivery pipeline. We have also used this tutorial to facilitate remote workshops with bootcamps that want to introduce CI/CD concepts to their students.
 
-> The results of this tutorial should not be viewed as production ready, but don't let that stop you from learning!
+These are the bootcamps we collaborated with so far:
+
+- [BCN FemTech - Factoría F5](https://factoriaf5.org/bcn-femtech/)
+
 
 ## The labs
 
 Following a series of labs, we will build a continuous deployment pipeline where every step is automated. Each lab introduces a new CI/CD concept and implements a new step of the pipeline. The first few labs are focused on understanding the tools and how to create pipelines in Github Actions. If you complete all the labs, you will have a working pipeline and a good foundation on how to apply CI/CD principles and practices to your projects.
+
+> The results of this tutorial should not be viewed as production ready, but don't let that stop you from learning!
 
 ![Step by step](docs/images/lab-steps.svg "Step by step")
 
