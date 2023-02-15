@@ -1,0 +1,14 @@
+name: CI/CD Pipeline
+
+# Cuando debe ejecutarse? on:
+on: push 
+# Quer quiero que haga el pipeline? jobs: / tasks:
+jobs:
+  hello-world:
+    # En que S.O. de la máquina de Github queremos que se ejecute?
+    runs-on: ubuntu-latest
+    # Cuales són los pasos que debe ejecutar?
+    steps:
+      - name: Paso hola mundo
+        run: echo "Hola mundo"
+
