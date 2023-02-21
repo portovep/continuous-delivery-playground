@@ -16,6 +16,13 @@ These are the bootcamps we collaborated with so far:
 
 - [BCN FemTech - Factoría F5](https://factoriaf5.org/bcn-femtech/)
 
+Feedback from the attendants:
+
+> "The repo is great, the different concepts and steps to take are super well explained"
+
+> "Really like the workshop, we were able to follow through as a group and complete almost all the labs. Congratulations"
+
+
 
 ## The labs
 
